@@ -1,0 +1,52 @@
+:root {
+  --light-blue: #38cfd9;
+  --blue: #136c72;
+  --dark-blue: #23424a;
+}
+
+* {
+  font-family: Roboto;
+  color: #fff;
+}
+
+.container {
+  background-color: var(--dark-blue);
+  font-weight: 900;
+
+  color: #ffffff;
+
+  padding: 100px;
+}
+
+.contents {
+  width: 50%;
+}
+
+.container .title {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.container .subtitle {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.primary-btn {
+  background: var(--light-blue);
+  mix-blend-mode: normal;
+  border-radius: 31.5px;
+
+  /* flat */
+  border: 0;
+  box-shadow: none;
+}
+
+.primary-btn .hero-btn-text {
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #23424a;
+  padding: 0 30px;
+  font-weight: 700;
+}
