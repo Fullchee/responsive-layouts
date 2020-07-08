@@ -4,32 +4,39 @@
   --dark-blue: #23424a;
 }
 
-* {
+*,
+*::before,
+*::after {
   font-family: Roboto;
   color: #fff;
+  box-sizing: border;
 }
 
-.container {
+.hero {
   background-color: var(--dark-blue);
   font-weight: 900;
 
   color: #ffffff;
 
-  padding: 100px;
+  /* only padding at the top, deal with left-right in the .contents */
+  padding: 100px 0;
 }
 
 .contents {
-  width: 50%;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 750px;
 }
 
-.container .title {
+.hero .title {
   font-weight: 700;
   font-size: 48px;
 }
 
-.container .subtitle {
+.hero .subtitle {
   font-size: 21px;
   font-weight: 300;
+  margin-bottom: 3em;
 }
 
 .primary-btn {
