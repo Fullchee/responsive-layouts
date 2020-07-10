@@ -19,65 +19,75 @@
 
    */
 
-*, *::before, *::after {
-    box-sizing: border-box;
+:root {
+  --cta-button-color: #38cfd9;
+  --hero-background: #23424a;
+  --three-col-header-color: #87629a;
+  --three-col-text-color: #3a3a3a;
+  --two-col-background: #136c72;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .container {
-    width: 80%;
-    max-width: 1100px;
-    margin: 0 auto;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .row {
-    /* display: flex => flex container */
-    display: flex;
+  /* display: flex => flex container */
+  display: flex;
 
-    /* can't use yet */
-    /* gap: 100px; */
+  /* can't use yet */
+  /* gap: 100px; */
 }
 
 .col {
-    /* these are now flex items */
-    width: 100%;
+  /* these are now flex items */
+  width: 100%;
 }
 
 .hero {
-    padding: 100px 0;
-    background-color: #23424A;
-    color: #FFF;
+  padding: 100px 0;
+  background-color: var(--hero-background);
+  color: #fff;
 }
 
 .hero__text {
-    width: 60%;
+  width: 60%;
 }
 
 .hero p {
-    margin-bottom: 3em;
+  margin-bottom: 3em;
 }
 
 .btn {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase; 
-    color: #23424A;
-    font-weight: 900;
-    background-color: #38CFD9;
-    padding: .75em 2em;
-    border-radius: 100px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--hero-background);
+  font-weight: 900;
+  background-color: var(--cta-button-color);
+  padding: 0.75em 2em;
+  border-radius: 100px;
 }
 
 .btn:hover,
 .btn:focus {
-    opacity: .75; 
+  opacity: 0.75;
 }
