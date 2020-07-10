@@ -1,103 +1,83 @@
-:root {
-  --cta-button-color: #38cfd9;
-  --hero-background: #23424a;
-  --three-col-header-color: #87629a;
-  --three-col-text-color: #3a3a3a;
-  --two-col-background: #136c72;
+/* 
+////// For this challenge ///////
+
+- You will have to modify the HTML
+
+- You can add new classes in the HTML
+  if you need to
+
+// Requirements
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created,
+   so you'll have to add it back in
+
+   */
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  font-family: Roboto;
-  color: #fff;
-  box-sizing: border;
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
 }
 
-.hero {
-  background-color: var(--hero-background);
-  font-weight: 900;
-
-  color: #ffffff;
-
-  /* only padding at the top, deal with left-right in the .contents */
-  padding: 100px 0;
+h1 {
+    font-size: 3rem;
 }
 
-.contents {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 750px;
-}
-
-.hero .title {
-  font-weight: 700;
-  font-size: 48px;
-}
-
-.hero .subtitle {
-  font-size: 21px;
-  font-weight: 300;
-  margin-bottom: 3em;
-}
-
-.primary-btn {
-  background: var(--cta-button-color);
-  mix-blend-mode: normal;
-  border-radius: 31.5px;
-
-  /* flat */
-  border: 0;
-  box-shadow: none;
-}
-
-.primary-btn .hero-btn-text {
-  line-height: 150%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #23424a;
-  padding: 0 30px;
-  font-weight: 700;
-}
-
-/* three-col */
-.header {
-  font-size: 36px;
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .row {
-  margin: 0 200px;
-}
+    /* display: flex => flex container */
+    display: flex;
 
-.three-col,
-.two-col {
-  display: flex;
-}
-
-.three-col .header {
-  color: var(--three-col-header-color);
-}
-
-.three-col p {
-  color: var(--three-col-text-color);
-}
-
-.two-col {
-  background: var(--two-col-background);
-}
-
-.two-col .header {
-  color: white;
-}
-
-.two-col p {
-  color: white;
+    /* can't use yet */
+    /* gap: 100px; */
 }
 
 .col {
-  text-align: center;
+    /* these are now flex items */
+    width: 100%;
 }
 
-.col + .col {
-  margin-left: 10px;
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero__text {
+    width: 60%;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
 }
