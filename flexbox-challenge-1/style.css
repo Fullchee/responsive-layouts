@@ -60,6 +60,11 @@ h1 {
 .col {
   /* these are now flex items */
   width: 100%;
+  text-align: center;
+}
+
+.col + .col {
+    margin-left: 15px;
 }
 
 .hero {
@@ -90,4 +95,17 @@ h1 {
 .btn:hover,
 .btn:focus {
   opacity: 0.75;
+}
+
+.three-col h2 {
+    color: var(--three-col-header-color);
+}
+
+.three-col p {
+    color: var(--three-col-text-color);
+}
+
+.two-col {
+    background-color: var(--two-col-background);
+    color: white;
 }
