@@ -137,10 +137,6 @@ header {
     flex-direction: row;
 }
 
-.nav__list:first-child {
-    margin-left: 3em;
-}
-
 .nav__item + .nav__item {
     margin-left: 1em;
 }
