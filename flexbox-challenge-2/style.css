@@ -103,9 +103,12 @@ h1 {
 
 .challenge2 {
   display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .challenge2 .description {
+  width: 62%;
 }
 
 .accent-header {
@@ -114,12 +117,12 @@ h1 {
   font-weight: 900;
 }
 
-.cta {
+.sidebar {
   background-color: var(--secondary-color);
   color: white;
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  width: 32%;
 }
 
 .card {
