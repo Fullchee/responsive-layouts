@@ -12,6 +12,15 @@
 
 */
 
+:root {
+  --cta-button-color: #38cfd9;
+  --hero-background: #23424a;
+  --three-col-header-color: #87629a;
+  --three-col-text-color: #3a3a3a;
+  --secondary-color: #136c72;
+}
+
+
 *,
 *::before,
 *::after {
@@ -90,4 +99,30 @@ h1 {
 .btn:hover,
 .btn:focus {
   opacity: 0.75;
+}
+
+.challenge2 {
+  display: flex;
+}
+
+.challenge2 .description {
+}
+
+.accent-header {
+  color: var(--secondary-color);
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.cta {
+  background-color: var(--secondary-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.card {
+  text-align: center;
+  padding: 10px 15px;
 }
