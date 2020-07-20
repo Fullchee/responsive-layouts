@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* reset h2 */
+h2 {
+    margin-top: 0px;
+}
+
 :root {
   --hero-background: #f3eed9;
   --section1-background: #222c2a;
@@ -61,6 +66,7 @@ h1 {
 /* section 0 */
 .section0 {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .section0 .section__title {
@@ -77,11 +83,30 @@ h1 {
   padding: 5px;
 }
 
-.row:first-child {
-    margin-right: 100px;
+.row > *:first-child {
+  width: 45%;
 }
 
-/* sibiling combinator */
-.row > * ~ * {
-    /* margin-left: 100px; */
+.row > *:last-child {
+  width: 45%;
+}
+
+.section__title {
+    color: var(--hero-background);
+}
+
+.section1, .section2 {
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* .section1 . */
+
+.section1 {
+    background-color: var(--section1-background);
+}
+
+.section2 {
+    background-color: var(--section2-background);
 }
