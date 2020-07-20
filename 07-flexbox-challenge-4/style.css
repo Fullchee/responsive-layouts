@@ -40,6 +40,9 @@ h1 {
   padding: 100px 0;
   background-color: var(--hero-background);
   color: var(--section2-background);
+  min-height: 660px;
+  display: flex;
+  align-items: center;
 }
 
 .hero__text {
@@ -109,4 +112,8 @@ h1 {
 
 .section2 {
     background-color: var(--section2-background);
+}
+
+img {
+    object-fit: cover;
 }
