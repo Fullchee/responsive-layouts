@@ -195,3 +195,49 @@ header {
     width: 32%;
   }
 }
+
+/* start of challenge */
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__item {
+    list-style-type: none;
+    margin: 1.5rem 0;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__link--button {
+    padding: 0.5em 1em;
+    border-radius: 10rem;
+    background-color: white;
+    color: #136c72
+}
+
+@media (min-width: 800px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav__list {
+        display: flex;
+    }
+    
+    .nav__item {
+        margin: 0;
+    }
+    .nav__item + .nav__item {
+        margin-left: 1rem;
+    }
+
+    .nav__list--secondary {
+        justify-content: space-between;
+    }
+}
